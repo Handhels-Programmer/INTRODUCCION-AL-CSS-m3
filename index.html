@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introducción a CSS</h1>
+
+    <h2>1. Definición de CSS</h2>
+    <p>CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación de un documento HTML. Permite definir cómo se verán los elementos en la página web, incluyendo colores, fuentes, márgenes, y más.</p>
+
+    <h2>2. Funcionamiento Básico de CSS</h2>
+    <p>CSS funciona aplicando estilos a elementos HTML mediante selectores. Cuando se carga una página web, el navegador procesa el HTML y aplica los estilos CSS para renderizar el contenido visualmente. Los estilos pueden ser específicos (aplicados a un solo elemento) o globales (aplicados a múltiples elementos).</p>
+
+    <h2>3. Incluir CSS en un archivo HTML</h2>
+    <p>Hay tres maneras principales de incluir CSS en un archivo HTML:</p>
+    <ul>
+        <li><strong>Inline CSS</strong>: Usando el atributo <code>style</code> dentro de una etiqueta HTML.
+            <pre><code>&lt;p style="color: red;"&gt;Este es un texto rojo.&lt;/p&gt;</code></pre>
+        </li>
+        <li><strong>Internal CSS</strong>: Usando una etiqueta <code>&lt;style&gt;</code> dentro de <code>&lt;head&gt;</code>.
+            <pre><code>&lt;head&gt;
+    &lt;style&gt;
+        p { color: blue; }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+        </li>
+        <li><strong>External CSS</strong>: Vinculando un archivo CSS externo con la etiqueta <code>&lt;link&gt;</code>.
+            <pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+        </li>
+    </ul>
+
+    <h2>4. Definición de una regla CSS</h2>
+    <p>Una regla CSS es una declaración que define cómo deben ser los estilos aplicados a ciertos elementos. Se compone de un selector y un bloque de declaración.</p>
+
+    <h2>5. Elemento de una regla CSS</h2>
+    <ul>
+        <li><strong>Regla</strong>: Conjunto de instrucciones CSS.</li>
+        <li><strong>Selector</strong>: Parte de la regla que especifica a qué elemento(s) se aplican los estilos. Ejemplo: <code>h1</code>, <code>.clase</code>, <code>#id</code>.</li>
+        <li><strong>Bloque de declaración</strong>: Contiene uno o más pares de propiedad-valor, encerrados en llaves <code>{}</code>.</li>
+        <li><strong>Propiedad</strong>: Característica del elemento que se desea modificar (por ejemplo, <code>color</code>, <code>font-size</code>).</li>
+        <li><strong>Valor</strong>: Especifica el valor que se asignará a la propiedad (por ejemplo, <code>red</code>, <code>16px</code>).</li>
+    </ul>
+    <p>Ejemplo de una regla CSS:</p>
+    <pre><code>h1 {
+    color: red; /* propiedad: valor */
+    font-size: 24px;
+}</code></pre>
+
+    <h2>6. Medios CSS</h2>
+    <p>Los medios CSS permiten aplicar estilos específicos según el tipo de dispositivo o tamaño de pantalla. Se utilizan con la regla <code>@media</code>. Por ejemplo:</p>
+    <pre><code>@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}</code></pre>
+
+    <h2>7. Comentarios CSS</h2>
+    <p>Los comentarios en CSS se utilizan para agregar notas o descripciones en el código. Se escriben entre <code>/*</code> y <code>*/</code> y no afectan la ejecución del CSS.</p>
+    <pre><code>/* Este es un comentario */
+h1 {
+    color: blue; /* Este texto será azul */
+}</code></pre>
+
+    <h2>8. Sintaxis de la definición de las propiedades CSS</h2>
+    <p>La sintaxis para definir propiedades CSS es la siguiente:</p>
+    <pre><code>selector {
+    propiedad: valor; /* cada declaración termina con un punto y coma */
+}</code></pre>
+    <p>Ejemplo:</p>
+    <pre><code>p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: black; /* Color del texto */
+}</code></pre>
+</body>
+</html>
